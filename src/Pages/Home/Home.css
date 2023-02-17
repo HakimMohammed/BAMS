@@ -1,0 +1,10 @@
+.Home .container{
+    display:flex;
+    margin-left:190px;
+    max-width: 10px;
+}
+.Home{
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}

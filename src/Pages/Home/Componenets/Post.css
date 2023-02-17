@@ -1,0 +1,134 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.Post *{
+    /* ------------------------------------------------------*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--content-color);
+}
+
+.PointerState{
+    /* Chat */
+    pointer-events: none ;
+}
+
+.Post :root{
+    /* ===== Colors ===== */
+    --body-color:#dbdbdb ;
+    --sidebar-color: #FFF;
+    --primary-color: #8F4C32;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+.Post body{
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+    
+}
+.Post ::selection{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.Post body.dark .home .text{
+    color: var(--text-color);
+}
+.Post .colorB{
+    color: #8F4C32;
+}
+.Post .post{
+    width:600px;
+    /* background:rgb(222, 214, 214); */
+    background-color: var(--sidebar-color);
+    border-radius:10px;
+    padding:10px;
+    margin:10px;
+}
+.Post .post .post-top{
+    display:flex;
+    align-items: center;
+    padding:10px;
+}
+.Post .post .post-top .dp{
+    width:80px;
+    height:80px;
+    /* border-radius: 50%;
+    overflow:hidden; */
+}
+.Post .post .post-top .dp > img{
+    margin-top: -5px;
+    margin-left: -5px;
+    border-radius: 50%;
+    height: 100%;
+    width:100%;
+    cursor:pointer;
+}
+.Post .post .post-top .post-info{
+    margin-left:10px;    
+    font-weight: bold;
+}
+.Post .post .post-top .post-info .name{
+    cursor:pointer;
+    font-size:16px;
+}
+.Post .post .post-top .post-info .time{
+    font-size:12px;
+    cursor:pointer;
+}
+.Post .post .post-top i{
+    margin-left:auto;
+    cursor: pointer;
+}
+.Post .post .post-top > input{
+    height:40px;
+    padding:5px 10px;
+    border-radius:25px;
+    outline:none;
+    border:none;
+    flex:1;
+    background:#eee;
+    margin-left:10px;
+}
+.Post .post .post-content{
+    font-size:16px;
+    font-weight:normal;
+    padding:10px;
+}
+.Post .post .post-content > img{
+    height: 100%;
+    width:100%;
+    margin:5px 0px;
+    border-radius: 12px;
+}
+.Post .post .post-content > video{
+    height: 100%;
+    width:100%;
+    margin:5px 0px;
+    border-radius: 12px;
+}
+.Post .post .post-bottom{
+    box-shadow: 1px solid #ddd;
+    display:flex;
+    justify-content: space-between;
+    padding:5px 5px 0px 5px;
+}
+.Post .post .post-bottom .action{
+    padding:10px;
+    border-radius:10px;
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+.Post .scroll::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+    margin-top: 25px;
+}
+

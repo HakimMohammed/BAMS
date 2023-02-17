@@ -1,0 +1,201 @@
+.popUpComment {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding-left: 7%;
+}
+
+.popUpComment .cancel-btn1{
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    left: 27%;
+    position: relative;
+    /* left: 92%; */
+    
+    cursor: pointer;
+   color: #000000;
+
+}
+
+.Post > video {
+    height: 100%;
+    width:100%;
+    
+    border-radius: 12px;
+}
+
+.commentShow{
+    display: flex;
+}
+
+
+.Publication {
+    display: flex;
+    flex-direction: row;
+    height: 520px;
+}
+
+
+
+
+
+
+.Commentaire {
+    height: 500px;
+    /* overflow: scroll; */
+    width: 60%;
+    
+}
+
+
+
+.Publication>.Post>img {
+    width: 100%;
+    height: 100%;
+}
+
+.Publication .Post {
+    width: 40%;
+}
+
+
+.Commentaire>section {
+    height: 67%;
+    overflow: scroll;
+}
+
+
+.Commentaire>section::-webkit-scrollbar,
+.Commentaire>section::-webkit-scrollbar-thumb {
+    width: 26px;
+    border-radius: 13px;
+    background-clip: padding-box;
+    border: 10px solid transparent;
+}
+
+.Commentaire>section::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 0 10px;
+}
+
+
+
+.icons {
+    display: flex;
+}
+
+
+.icons {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Commentaire header {
+    padding: 1px;
+    font-size: 2em;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+.Commentaire header>.return-down-back-outline {
+    float: left;
+
+}
+
+
+.Commentaire header>.navigate-outline {
+    float: right;
+
+}
+
+
+
+.Commentaire>section>div {
+    padding: 4%;
+    display: flex;
+
+}
+
+
+
+.Commentaire>section>div>.Image {
+    width: 20%;
+}
+
+.Commentaire>section>div>.Image>img {
+    width: 100%;
+    /* border-top-left-radius: 50% 50%;
+     border-top-right-radius: 50% 50%;
+     border-bottom-right-radius: 50% 50%;
+     border-bottom-left-radius: 50% 50%; */
+    /* height: 70px; */
+    clip-path: circle();
+
+}
+
+
+
+.Commentaire>section>div>.comment-body {
+    padding: 1px;
+    font-size: 1.1em;
+}
+
+.Commentaire>section>div>.comment-body>.Name {
+    font-weight: bold;
+}
+
+.Commentaire>section>div>.heart-outline {
+    padding-top: 3%;
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer>div .Envoyer-button {
+    width: 50px;
+    height: 50px;
+    background-color: #2bc174;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+
+}
+
+.Envoyer-button>.button__icon_3 {
+    font-size: 24px;
+}
+
+
+
+footer .Envoyer {
+    display: flex;
+}

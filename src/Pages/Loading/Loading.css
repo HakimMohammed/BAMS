@@ -1,0 +1,108 @@
+.loadingPage ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.loadingPage body{
+   font-family: Arial;
+   height: 100vh;
+
+}
+.loadingPage .loader{
+width: 100%;
+height: 700px;
+background-color:  rgb(242, 244, 246);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.loadingPage .lettre{
+color: rgb(105, 70, 26);
+font-size: 20px;
+letter-spacing: 15px;
+margin-top: 10rem;
+animation: flash 1.2s linear infinite;
+transform: translateX(-710px);
+}
+@keyframes flash{
+0%{
+  color: rgb(195, 144, 82);
+  text-shadow: 0 0  7px rgb(195, 144, 82);
+
+}
+90%{
+    color: rgb(105, 70, 26);
+
+   text-shadow: none;
+}
+100%{
+color: rgb(195, 144, 82);
+text-shadow: 0 0  7px rgb(195, 144, 82);
+
+
+}
+}
+.loadingPage .lettre:nth-child(1){
+animation-delay: 0.1s;
+}
+.loadingPage .lettre:nth-child(2){
+animation-delay: 0.2s;
+}
+.loadingPage .lettre:nth-child(3){
+animation-delay: 0.3s;
+}
+.loadingPage .lettre:nth-child(4){
+animation-delay: 0.4s;
+}
+.loadingPage .fondu-out{
+opacity: 0;
+transition: opacity 0.9s ease-out;
+}
+.loadingPage img{
+width: 6rem;
+transform: translateX(712px);
+transform: translateY();
+margin-top: 10px;
+
+}
+@keyframes rotate {
+from {
+    transform: rotate(0deg);
+}
+to { 
+    transform: rotate(360deg);
+}
+}
+@-webkit-keyframes rotate {
+from {
+    -webkit-transform: rotate(0deg);
+}
+to { 
+    -webkit-transform: rotate(300deg);
+}
+}
+.loadingPage .load {
+
+width: 100px;
+height: 100px;
+margin: 10px auto 0;
+transform: translateX(400px);
+transform: translateY(120px);
+border:solid 10px hsla(23, 64%, 21%, 0.616);
+border-radius: 50%;
+border-right-color: transparent;
+border-bottom-color: rgba(120, 120, 31, 0.479);
+bottom-color:rgba(165, 42, 42, 0.91);
+-webkit-transition: all 0.5s ease-in;
+-webkit-animation-name:             rotate; 
+-webkit-animation-duration:         1.0s; 
+-webkit-animation-iteration-count:  infinite;
+-webkit-animation-timing-function: linear;
+  
+transition: all 0.9s ease-in;
+animation-name:             rotate; 
+animation-duration:         1.0s; 
+animation-iteration-count:  infinite;
+animation-timing-function: linear; 
+}
+
